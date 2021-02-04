@@ -1,0 +1,38 @@
+.banner {
+    height: em(737);
+    background-image: url('/public/images/bannerBackground.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+
+    &__wrapper {
+        width: em(642);
+        height: em(449);
+        font-family: $font;
+        font-weight: 700;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-55%, -52%);
+        background: #fff;
+        border-radius: 50%;
+        line-height: em(56);
+        padding-top: em(108);
+        box-sizing: border-box;
+    }
+
+    &__text {
+        text-align: center;
+        text-transform: uppercase;
+        font-size: em(48);
+
+        &_yellow {
+            color: #f1a24a;
+            margin-bottom: em(8, 48);
+        }
+
+        &_red {
+            color: #a5244d;
+        }
+    }
+}

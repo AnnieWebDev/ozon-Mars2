@@ -1,0 +1,30 @@
+.btn {
+    display: inline-block;
+    background: #f1a24a;
+    border-radius: 148px;
+    padding: 25px 48px;
+    box-sizing: border-box;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 37px;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.icon {
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 120px;
+    display: block;
+    margin: 0 auto;
+
+    &_1 {
+        width: 44px;
+        background-image: url('/public/images/rules/icons/step1.png');
+    }
+
+    &_2 {
+        width: 90px;
+        background-image: url('/public/images/rules/icons/step2.png');
+    }
+}

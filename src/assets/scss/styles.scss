@@ -1,0 +1,34 @@
+@import 'utility/fonts';
+
+body {
+    margin: 0;
+}
+
+#ozonMars2Top,
+#ozonMars2Bottom {
+    @import 'utility/vars';
+
+    max-width: 1416px;
+    margin: 0 auto;
+    line-height: 40px;
+    color: #fff;
+    font-size: 16px;
+
+    @media (max-width: $desktop - 1) {
+        font-size: (100/95) + vw;
+    }
+
+    @media (max-width: $tablet) {
+        font-size: (100/64) + vw;
+    }
+
+    @media (max-width: $mobile) {
+        font-size: (100/20) + vw;
+    }
+
+    @import 'utility/reset';
+    @import 'utility/common';
+    @import 'ui/ui';
+    @import 'blanks/blanks';
+    @import 'sections/sections';
+}
