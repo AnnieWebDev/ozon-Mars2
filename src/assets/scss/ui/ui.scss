@@ -22,16 +22,17 @@
 .icon {
     background-repeat: no-repeat;
     background-size: cover;
-    height: 120px;
     display: block;
     margin: 0 auto;
 
     &_1 {
+        height: 120px;
         width: 44px;
         background-image: url('/public/images/rules/icons/step1.png');
     }
 
     &_2 {
+        height: 123px;
         width: 90px;
         background-image: url('/public/images/rules/icons/step2.png');
     }

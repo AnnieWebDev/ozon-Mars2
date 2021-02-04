@@ -49,53 +49,20 @@
     }
 
     &__logo {
-        &_five {
-            width: em(31);
-            height: em(79);
-        }
-
         &_dove {
-            width: em(127);
-            height: em(49);
             padding-left: em(13);
         }
 
         &_snickers {
-            width: em(165);
-            height: em(39);
             padding-left: em(29);
         }
 
         &_twix {
-            width: em(160);
-            height: em(79);
             padding-left: em(15);
         }
 
         &_mMs {
-            width: em(147);
-            height: em(73);
             padding-left: em(15);
-        }
-
-        &_skittles {
-            width: em(149);
-            height: em(109);
-        }
-
-        &_korkunov {
-            width: em(213);
-            height: em(78);
-        }
-
-        &_orbit {
-            width: em(160);
-            height: em(79);
-        }
-
-        &_beKind {
-            width: em(112);
-            height: em(79);
         }
     }
 
