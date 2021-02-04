@@ -1,61 +1,51 @@
 .rules {
     background: #a5244d;
-    padding-top: em(65);
     font-family: $font;
-    height: em(764);
-
-    &__container {
-        width: em(1336);
-        margin: 0 auto;
-    }
+    padding: em(65) em(40) em(80);
 
     &__wrapper {
         display: flex;
         margin-bottom: em(64);
         justify-content: space-between;
+        padding-top: em(17);
     }
 
     &__column {
         min-width: em(438);
         text-align: center;
-        margin-top: em(35);
-
-        &_card {
-            margin-top: em(52);
-            margin-left: em(15);
-        }
     }
 
     &__img {
         width: em(307);
         height: em(191);
         border-radius: em(23);
-        margin-top: em(45);
+        margin-top: em(63);
     }
 
     &__title {
         font-weight: 700;
         font-size: em(40);
-        line-height: em(46);
+        line-height: em(46, 40);
         text-align: center;
         text-transform: uppercase;
         color: #f1a24a;
-        margin-top: em(20);
-        margin-bottom: em(11);
+        margin-top: em(20, 40);
+        margin-bottom: em(11, 40);
     }
 
     &__text {
+        line-height: em(40, 32);
         font-size: em(32);
         font-weight: 700;
-        line-height: em(40);
     }
 
     &__logos {
         width: 100%;
-        margin-bottom: em(81);
+        margin-bottom: em(64);
         display: flex;
         justify-content: space-evenly;
         align-items: center;
+        box-sizing: border-box;
     }
 
     &__logo {
@@ -67,21 +57,25 @@
         &_dove {
             width: em(127);
             height: em(49);
+            padding-left: em(13);
         }
 
         &_snickers {
             width: em(165);
             height: em(39);
+            padding-left: em(29);
         }
 
         &_twix {
             width: em(160);
             height: em(79);
+            padding-left: em(15);
         }
 
         &_mMs {
             width: em(147);
             height: em(73);
+            padding-left: em(15);
         }
 
         &_skittles {

@@ -1,14 +1,22 @@
 .btn {
     display: inline-block;
     background: #f1a24a;
-    border-radius: 148px;
-    padding: 25px 48px;
-    box-sizing: border-box;
+    border-radius: em(148, 32);
+    padding: em(17, 32) em(40, 32);
     font-weight: 700;
-    font-size: 32px;
-    line-height: 37px;
+    font-size: em(32);
+    line-height: em(37, 32);
     text-transform: uppercase;
+    text-decoration: none;
+    border: em(4) solid #f1a24a;
     color: #fff;
+    box-sizing: border-box;
+    transition: 0.3s linear;
+
+    &:hover {
+        background: #fff;
+        color: #f1a24a;
+    }
 }
 
 .icon {
