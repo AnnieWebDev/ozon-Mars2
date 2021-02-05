@@ -1,0 +1,55 @@
+.gifts {
+    background: #a5244d;
+    font-family: $font;
+    padding-bottom: em(80);
+
+    &__container {
+        display: flex;
+        margin-bottom: em(80);
+    }
+
+    &__title {
+        font-weight: 700;
+        font-size: em(32);
+        line-height: em(39, 32);
+        text-align: center;
+        text-transform: uppercase;
+        background: #e5004e;
+        padding: em(23, 32) 0 em(19, 32);
+
+        &_yellow {
+            background: #f1a24a;
+        }
+    }
+
+    &__img-container {
+        &_1 {
+            background-image: url('/public/images/gifts/img1.jpg');
+        }
+
+        &_2 {
+            background-image: url('/public/images/gifts/img2.png');
+        }
+
+        &_3 {
+            background-image: url('/public/images/gifts/img3.jpg');
+        }
+
+        &_4 {
+            background-image: url('/public/images/gifts/img4.jpg');
+        }
+    }
+
+    &__img {
+        opacity: 0;
+        transition: 0.2s linear;
+
+        &:hover {
+            opacity: 1;
+        }
+    }
+
+    &__btn-container {
+        text-align: center;
+    }
+}
