@@ -23,12 +23,24 @@
         line-height: em(56);
         padding-top: em(108);
         box-sizing: border-box;
+
+        @media (max-width: $tablet) {
+            height: em(356);
+            width: em(508);
+            line-height: em(46);
+            padding-top: em(86);
+            left: 53%;
+        }
     }
 
     &__text {
         text-align: center;
         text-transform: uppercase;
         font-size: em(48);
+
+        @media (max-width: $tablet) {
+            font-size: em(40);
+        }
 
         &_yellow {
             color: #f1a24a;

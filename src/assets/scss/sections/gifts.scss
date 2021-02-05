@@ -6,6 +6,10 @@
     &__container {
         display: flex;
         margin-bottom: em(80);
+
+        @media (max-width: $tablet) {
+            margin-bottom: em(40);
+        }
     }
 
     &__link {
@@ -27,6 +31,11 @@
         background: #e5004e;
         padding: em(23, 32) 0 em(19, 32);
 
+        @media (max-width: $tablet) {
+            font-size: em(18);
+            line-height: em(18, 18);
+        }
+
         &_yellow {
             background: #f1a24a;
         }
@@ -36,6 +45,10 @@
         background-size: 100% 100%;
         background-repeat: no-repeat;
         height: em(400);
+
+        @media (max-width: $tablet) {
+            height: em(285);
+        }
 
         &_1 {
             background-image: url('/public/images/gifts/img1.jpg');

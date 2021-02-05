@@ -18,6 +18,13 @@
         background: #fff;
         color: #f1a24a;
     }
+
+    @media (max-width: $tablet) {
+        font-size: em(24);
+        line-height: em(28, 24);
+        padding: em(15, 24) em(49, 24);
+        border: em(3) solid #f1a24a;
+    }
 }
 
 .icon {
@@ -27,15 +34,25 @@
     margin: 0 auto;
 
     &_1 {
-        height: 120px;
-        width: 44px;
+        height: em(120);
+        width: em(44);
         background-image: url('/public/images/rules/icons/step1.png');
+
+        @media (max-width: $tablet) {
+            width: em(22);
+            height: em(61);
+        }
     }
 
     &_2 {
-        height: 123px;
-        width: 90px;
+        height: em(123);
+        width: em(90);
         background-image: url('/public/images/rules/icons/step2.png');
+
+        @media (max-width: $tablet) {
+            width: em(49);
+            height: em(68);
+        }
     }
 }
 
