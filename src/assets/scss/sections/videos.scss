@@ -1,0 +1,17 @@
+.videos {
+    padding-top: em(80);
+    box-sizing: border-box;
+
+    &__btn-container {
+        text-align: center;
+        margin-bottom: em(80);
+    }
+
+    &__video {
+        width: em(1335);
+        height: em(751);
+        margin: 0 auto;
+        display: block;
+        margin-bottom: em(80);
+    }
+}

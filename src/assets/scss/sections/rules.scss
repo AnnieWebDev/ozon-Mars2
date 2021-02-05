@@ -49,20 +49,45 @@
     }
 
     &__logo {
+        &_five {
+            width: em(31);
+            height: em(79);
+        }
+
         &_dove {
+            width: em(127);
             padding-left: em(13);
         }
 
         &_snickers {
+            width: em(165);
             padding-left: em(29);
         }
 
         &_twix {
+            width: em(160);
             padding-left: em(15);
         }
 
         &_mMs {
+            width: em(147);
             padding-left: em(15);
+        }
+
+        &_skittles {
+            width: em(149);
+        }
+
+        &_korkunov {
+            width: em(213);
+        }
+
+        &_orbit {
+            width: em(160);
+        }
+
+        &_beKind {
+            width: em(112);
         }
     }
 

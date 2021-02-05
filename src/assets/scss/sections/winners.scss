@@ -1,0 +1,28 @@
+.winners {
+    padding-top: em(40);
+
+    &__slider {
+        height: em(449);
+    }
+
+    &__slide-wrapper {
+        width: em(642);
+        height: em(449);
+        font-family: $font;
+        font-weight: 700;
+        position: absolute;
+        background: #fff;
+        border-radius: 50%;
+        line-height: em(56);
+        padding-top: em(141);
+        box-sizing: border-box;
+        left: 28%;
+    }
+
+    &__slide-text {
+        text-align: center;
+        text-transform: uppercase;
+        font-size: em(48);
+        color: #f1a24a;
+    }
+}

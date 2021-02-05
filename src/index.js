@@ -1,4 +1,2 @@
 import './assets/scss/styles.scss';
-import header from './js/sections/header';
-
-console.log(header);
+import './js/sections/winners';

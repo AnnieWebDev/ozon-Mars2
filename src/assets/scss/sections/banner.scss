@@ -5,6 +5,10 @@
     background-repeat: no-repeat;
     position: relative;
 
+    @media (max-width: $tablet) {
+        height: em(534);
+    }
+
     &__wrapper {
         width: em(642);
         height: em(449);

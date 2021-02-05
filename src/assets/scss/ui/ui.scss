@@ -12,6 +12,7 @@
     color: #fff;
     box-sizing: border-box;
     transition: 0.3s linear;
+    font-family: $font;
 
     &:hover {
         background: #fff;
@@ -35,5 +36,53 @@
         height: 123px;
         width: 90px;
         background-image: url('/public/images/rules/icons/step2.png');
+    }
+}
+
+.swiper-container {
+    padding-bottom: em(53);
+
+    .swiper-pagination {
+        position: absolute;
+        bottom: 0;
+
+        &-bullet {
+            width: em(24);
+            height: em(24);
+            border: em(3) solid #f1a24a;
+            box-sizing: border-box;
+            background: #a5244d;
+            opacity: 1;
+            margin: 0 em(8);
+
+            &-active {
+                background: #f1a24a;
+            }
+        }
+    }
+
+    .swiper-button {
+        width: em(80);
+        height: em(80);
+        background-color: #f1a24a;
+        background-repeat: no-repeat;
+        background-position: center;
+        border-radius: 50%;
+        background-size: em(20) em(40);
+        margin-top: em(-57);
+
+        &::after {
+            display: none;
+        }
+
+        &-prev {
+            left: em(40);
+            background-image: url('/public/images/winners/arrowLeft.svg');
+        }
+
+        &-next {
+            right: em(40);
+            background-image: url('/public/images/winners/arrowRight.svg');
+        }
     }
 }
