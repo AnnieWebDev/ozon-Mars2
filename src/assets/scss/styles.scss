@@ -18,6 +18,10 @@ body {
         font-size: (100/95) + vw;
     }
 
+    @media (max-width: $tablet) {
+        font-size: (100/64) + vw;
+    }
+
     @media (max-width: $mobile) {
         font-size: (100/20) + vw;
     }
