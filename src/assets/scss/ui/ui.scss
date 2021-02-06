@@ -25,6 +25,13 @@
         padding: em(17, 24) em(30, 24);
         border: em(3) solid #f1a24a;
     }
+
+    @media (max-width: $mobile) {
+        font-size: em(16);
+        line-height: em(18, 16);
+        padding: em(14, 16) em(19, 16);
+        border: em(2) solid #f1a24a;
+    }
 }
 
 .icon {
@@ -42,6 +49,11 @@
             width: em(22);
             height: em(61);
         }
+
+        @media (max-width: $mobile) {
+            width: em(18);
+            height: em(50);
+        }
     }
 
     &_2 {
@@ -53,6 +65,11 @@
             width: em(49);
             height: em(68);
         }
+
+        @media (max-width: $mobile) {
+            width: em(41);
+            height: em(56);
+        }
     }
 }
 
@@ -61,6 +78,10 @@
 
     @media (max-width: $tablet) {
         padding-bottom: em(51);
+    }
+
+    @media (max-width: $mobile) {
+        padding-bottom: em(16);
     }
 
     .swiper-pagination {
@@ -75,6 +96,12 @@
             background: #a5244d;
             opacity: 1;
             margin: 0 em(8);
+
+            @media (max-width: $mobile) {
+                width: em(16);
+                height: em(16);
+                border: em(2) solid #f1a24a;
+            }
 
             &-active {
                 background: #f1a24a;
@@ -95,6 +122,10 @@
         @media (max-width: $tablet) {
             width: em(64);
             height: em(64);
+        }
+
+        @media (max-width: $mobile) {
+            display: none;
         }
 
         &::after {
@@ -118,5 +149,19 @@
 
     @media (min-width: $desktop) {
         display: inline;
+    }
+}
+
+.mobile-only {
+    display: none;
+
+    @media (max-width: $mobile) {
+        display: inline;
+    }
+}
+
+.hide-mobile {
+    @media (max-width: $mobile) {
+        display: none;
     }
 }

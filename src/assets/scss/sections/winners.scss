@@ -5,11 +5,19 @@
         padding-top: em(80);
     }
 
+    @media (max-width: $mobile) {
+        padding-top: em(31);
+    }
+
     &__slider {
         height: em(449);
 
         @media (max-width: $tablet) {
             height: em(392);
+        }
+
+        @media (max-width: $mobile) {
+            height: em(223);
         }
     }
 
@@ -33,6 +41,14 @@
             padding-top: em(127);
             left: 23%;
         }
+
+        @media (max-width: $mobile) {
+            height: em(208);
+            width: em(280);
+            line-height: em(23);
+            padding-top: em(58);
+            left: em(20);
+        }
     }
 
     &__slide-text {
@@ -43,6 +59,10 @@
 
         @media (max-width: $tablet) {
             font-size: em(40);
+        }
+
+        @media (max-width: $mobile) {
+            font-size: em(20);
         }
     }
 }

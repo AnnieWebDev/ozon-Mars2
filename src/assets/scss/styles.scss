@@ -13,6 +13,7 @@ body {
     line-height: 40px;
     color: #fff;
     font-size: 16px;
+    background: #a5244d;
 
     @media (max-width: $desktop - 1) {
         font-size: (100/95) + vw;
@@ -34,6 +35,11 @@ body {
 
         @media (max-width: $tablet) {
             height: em(1890);
+        }
+
+        @media (max-width: $mobile) {
+            height: em(860);
+            background-size: contain;
         }
     }
 

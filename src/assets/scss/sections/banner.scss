@@ -9,6 +9,11 @@
         height: em(534);
     }
 
+    @media (max-width: $mobile) {
+        height: em(344);
+        background-size: contain;
+    }
+
     &__wrapper {
         width: em(642);
         height: em(449);
@@ -30,6 +35,15 @@
             line-height: em(46);
             padding-top: em(86);
             left: 53%;
+            top: 71%;
+        }
+
+        @media (max-width: $mobile) {
+            height: em(178);
+            width: em(256);
+            line-height: em(23);
+            padding-top: em(41);
+            left: 53%;
         }
     }
 
@@ -40,6 +54,10 @@
 
         @media (max-width: $tablet) {
             font-size: em(40);
+        }
+
+        @media (max-width: $mobile) {
+            font-size: em(18);
         }
 
         &_yellow {

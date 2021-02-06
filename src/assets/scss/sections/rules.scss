@@ -7,6 +7,10 @@
         padding: em(40) em(63) em(40);
     }
 
+    @media (max-width: $mobile) {
+        padding: em(48) em(20) em(34);
+    }
+
     &__wrapper {
         display: flex;
         margin-bottom: em(64);
@@ -17,6 +21,12 @@
             padding-top: 0;
             margin-bottom: em(40);
         }
+
+        @media (max-width: $mobile) {
+            padding-top: 0;
+            margin-bottom: em(22);
+            flex-wrap: wrap;
+        }
     }
 
     &__column {
@@ -25,6 +35,16 @@
 
         @media (max-width: $tablet) {
             min-width: auto;
+        }
+
+        @media (max-width: $mobile) {
+            margin: 0 auto;
+        }
+
+        &_card {
+            @media (max-width: $mobile) {
+                margin-bottom: em(18);
+            }
         }
     }
 
@@ -38,6 +58,11 @@
             width: em(175);
             height: em(109);
             margin-top: em(27);
+        }
+
+        @media (max-width: $mobile) {
+            width: em(137);
+            height: em(85);
         }
     }
 
@@ -55,6 +80,13 @@
             font-size: em(24);
             line-height: em(28, 24);
         }
+
+        @media (max-width: $mobile) {
+            line-height: em(21, 18);
+            font-size: em(18);
+            margin-top: em(18, 18);
+            margin-bottom: em(5, 18);
+        }
     }
 
     &__text {
@@ -65,6 +97,11 @@
         @media (max-width: $tablet) {
             line-height: em(28, 24);
             font-size: em(24);
+        }
+
+        @media (max-width: $mobile) {
+            line-height: em(19, 16);
+            font-size: em(16);
         }
     }
 
@@ -79,6 +116,11 @@
         @media (max-width: $tablet) {
             margin-bottom: em(40);
         }
+
+        @media (max-width: $mobile) {
+            margin-bottom: em(43);
+            flex-wrap: wrap;
+        }
     }
 
     &__logo {
@@ -87,6 +129,11 @@
 
             @media (max-width: $tablet) {
                 width: em(22);
+            }
+
+            @media (max-width: $mobile) {
+                width: em(19);
+                margin-left: em(91);
             }
         }
 
@@ -97,6 +144,11 @@
             @media (max-width: $tablet) {
                 width: em(90);
             }
+
+            @media (max-width: $mobile) {
+                width: em(55);
+                margin-right: em(94);
+            }
         }
 
         &_snickers {
@@ -105,6 +157,11 @@
 
             @media (max-width: $tablet) {
                 width: em(117);
+            }
+
+            @media (max-width: $mobile) {
+                width: em(71);
+                padding-left: 0;
             }
         }
 
@@ -115,6 +172,11 @@
             @media (max-width: $tablet) {
                 width: em(114);
             }
+
+            @media (max-width: $mobile) {
+                width: em(70);
+                padding-left: 0;
+            }
         }
 
         &_mMs {
@@ -124,6 +186,11 @@
             @media (max-width: $tablet) {
                 width: em(104);
             }
+
+            @media (max-width: $mobile) {
+                width: em(65);
+                padding-left: 0;
+            }
         }
 
         &_skittles {
@@ -131,6 +198,10 @@
 
             @media (max-width: $tablet) {
                 width: em(106);
+            }
+
+            @media (max-width: $mobile) {
+                width: em(63);
             }
         }
 
@@ -140,6 +211,11 @@
             @media (max-width: $tablet) {
                 width: em(150);
             }
+
+            @media (max-width: $mobile) {
+                width: em(114);
+                margin-left: em(10);
+            }
         }
 
         &_orbit {
@@ -148,6 +224,11 @@
             @media (max-width: $tablet) {
                 width: em(114);
             }
+
+            @media (max-width: $mobile) {
+                width: em(68);
+                margin-right: em(8);
+            }
         }
 
         &_beKind {
@@ -155,6 +236,11 @@
 
             @media (max-width: $tablet) {
                 width: em(80);
+            }
+
+            @media (max-width: $mobile) {
+                width: em(54);
+                margin-right: em(14);
             }
         }
     }

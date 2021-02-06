@@ -6,12 +6,20 @@
         padding-top: em(48);
     }
 
+    @media (max-width: $mobile) {
+        padding-top: em(46);
+    }
+
     &__btn-container {
         text-align: center;
         margin-bottom: em(80);
 
         @media (max-width: $tablet) {
             margin-bottom: em(41);
+        }
+
+        @media (max-width: $mobile) {
+            margin-bottom: em(40);
         }
     }
 
@@ -26,6 +34,12 @@
             width: em(944);
             height: em(531);
             margin-bottom: em(40);
+        }
+
+        @media (max-width: $mobile) {
+            width: em(280);
+            height: em(157);
+            margin-bottom: em(50);
         }
     }
 }

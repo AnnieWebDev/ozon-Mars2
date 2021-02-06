@@ -10,6 +10,10 @@
         @media (max-width: $tablet) {
             margin-bottom: em(40);
         }
+
+        @media (max-width: $mobile) {
+            flex-wrap: wrap;
+        }
     }
 
     &__link {
@@ -19,6 +23,10 @@
 
         &:hover .gifts__img {
             opacity: 1;
+        }
+
+        @media (max-width: $mobile) {
+            width: 100%;
         }
     }
 
@@ -36,6 +44,12 @@
             line-height: em(18, 18);
         }
 
+        @media (max-width: $mobile) {
+            font-size: em(16);
+            line-height: em(18, 16);
+            padding: em(25, 16) 0 em(28, 16);
+        }
+
         &_yellow {
             background: #f1a24a;
         }
@@ -48,6 +62,11 @@
 
         @media (max-width: $tablet) {
             height: em(285);
+        }
+
+        @media (max-width: $mobile) {
+            height: em(328);
+            background-size: cover;
         }
 
         &_1 {
