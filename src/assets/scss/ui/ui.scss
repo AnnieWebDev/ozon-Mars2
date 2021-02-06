@@ -22,7 +22,7 @@
     @media (max-width: $tablet) {
         font-size: em(24);
         line-height: em(28, 24);
-        padding: em(15, 24) em(49, 24);
+        padding: em(17, 24) em(30, 24);
         border: em(3) solid #f1a24a;
     }
 }
@@ -59,6 +59,10 @@
 .swiper-container {
     padding-bottom: em(53);
 
+    @media (max-width: $tablet) {
+        padding-bottom: em(51);
+    }
+
     .swiper-pagination {
         position: absolute;
         bottom: 0;
@@ -88,6 +92,11 @@
         background-size: em(20) em(40);
         margin-top: em(-57);
 
+        @media (max-width: $tablet) {
+            width: em(64);
+            height: em(64);
+        }
+
         &::after {
             display: none;
         }
@@ -101,5 +110,13 @@
             right: em(40);
             background-image: url('/public/images/winners/arrowRight.svg');
         }
+    }
+}
+
+.desktop-only {
+    display: none;
+
+    @media (min-width: $desktop) {
+        display: inline;
     }
 }

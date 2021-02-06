@@ -1,8 +1,16 @@
 .winners {
     padding-top: em(40);
 
+    @media (max-width: $tablet) {
+        padding-top: em(80);
+    }
+
     &__slider {
         height: em(449);
+
+        @media (max-width: $tablet) {
+            height: em(392);
+        }
     }
 
     &__slide-wrapper {
@@ -17,6 +25,14 @@
         padding-top: em(141);
         box-sizing: border-box;
         left: 28%;
+
+        @media (max-width: $tablet) {
+            height: em(392);
+            width: em(560);
+            line-height: em(46);
+            padding-top: em(127);
+            left: 23%;
+        }
     }
 
     &__slide-text {
@@ -24,5 +40,9 @@
         text-transform: uppercase;
         font-size: em(48);
         color: #f1a24a;
+
+        @media (max-width: $tablet) {
+            font-size: em(40);
+        }
     }
 }

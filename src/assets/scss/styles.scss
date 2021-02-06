@@ -31,6 +31,10 @@ body {
         background-image: url('/public/images/bottomBg.jpg');
         background-size: cover;
         background-repeat: no-repeat;
+
+        @media (max-width: $tablet) {
+            height: em(1890);
+        }
     }
 
     @import 'utility/reset';
